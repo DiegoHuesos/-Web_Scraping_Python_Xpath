@@ -1,0 +1,7 @@
+Links = $x('//div[@class="V_Title"]/h2/a/@href').map(x => x.value)
+
+Título = $x('//div[@class="mb-auto"]/h2/a/text()').map(x => x.wholeText)
+
+Resumen = $x('//div[@class="lead"]/p/text()').map(x => x.wholeText)
+
+Cuerpo = $x('//div[@class="html-content"]/p[not(@class)]/text()').map(x => x.wholeText)
